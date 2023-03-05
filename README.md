@@ -1,15 +1,9 @@
-# Git - Github study
+<h1> Git - Github study </h1>
 
 <p><i>Just a summary of the most important commands and concepts of Git and Github. My development environment is Windows 11, but after installing Git Bash on a Windows computer, users have the same set of Git commands available as in Git's native environment (a Unix-style system like Linux or macOS).</i></p>
 
-# Table of Contents
+<h1> Table of Contents </h1>
 
-### 1. [Git](#I-git)
-
--  [Git - Github study](#git---github-study)
--  [Table of Contents](#table-of-contents)
-   -  [1. Git](#1-git)
-   -  [2. GitHub](#2-github)
 -  [I. Git](#i-git)
    -  [I.1. What is Git?](#i1-what-is-git)
    -  [I.2. Git Installation and Configuration](#i2-git-installation-and-configuration)
@@ -86,6 +80,18 @@ About history of Git, you can check it by yourself [here](https://www.geeksforge
 
 You can download Git [here](https://git-scm.com/downloads). After downloading, you can install Git by following the instructions on the screen.
 
+If you have installed Git successfully, you can check the version of Git by typing the following command in your terminal:
+
+```bash
+git --version
+```
+
+And update Git to the latest version by typing:
+
+```bash
+git update-git-for-windows
+```
+
 ### I.2.2. Configure Git
 
 Config Git is very important. It will help you to identify who you are when you commit changes to the repository. Just open your terminal and type:
@@ -105,6 +111,8 @@ git config --global user.email browninsuit@gmail.com
 ## I.3. Git terms
 
 ### I.3.1. Repository
+
+A repository is a storage space where you can keep all the files related to your project, including code, documentation, and other resources. It's like a folder or directory on your computer, but with additional features that make it easy to manage changes and collaborate with others. In Git, a repository is also known as a "repo" and it tracks changes made to the files in the repository over time. Developers use repositories to manage their code and collaborate with others on the same project.
 
 ### I.3.2. Working directory
 
