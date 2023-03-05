@@ -59,6 +59,7 @@
       -  [I.4.21. git rm](#i421-git-rm)
       -  [I.4.22. git restore](#i422-git-restore)
 -  [II. GitHub](#ii-github)
+   -  [II.1. What's the difference between Git and GitHub?](#ii1-whats-the-difference-between-git-and-github)
 
 ### 2. [GitHub](#II-github)
 
@@ -213,3 +214,13 @@ The working directory is the directory on your local computer where you have you
 ---
 
 # II. GitHub
+
+## II.1. What's the difference between Git and GitHub?
+
+Git and GitHub are related but distinct tools.
+
+Git is a distributed version control system that allows developers to keep track of changes to their code and collaborate with others. It's a command-line tool that runs on your local computer and manages the changes to your code.
+
+GitHub, on the other hand, is a web-based platform that provides hosting for Git repositories. It allows developers to store their Git repositories on GitHub's servers and collaborate with others on their projects. GitHub provides a user-friendly interface for managing Git repositories, as well as features like pull requests, issue tracking, and project management tools.
+
+In summary, Git is a tool for managing code changes locally, while GitHub is a web-based platform that provides hosting for Git repositories and collaboration tools. While Git can be used independently of GitHub, GitHub relies on Git as its underlying technology.
