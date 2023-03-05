@@ -4,7 +4,7 @@
 
 # Table of Contents
 
-### I. [Git](#I-git)
+### 1. [Git](#I-git)
 
 1. [What is Git?](#I-1-what-is-git)
 2. [Git Installation and Configuration](#I-2-git-installation-and-configuration)
@@ -119,10 +119,20 @@
 
    </details>
 
-### II. [GitHub](#II-github)
+### 2. [GitHub](#II-github)
 
 ---
 
 # I. Git
+
+## I.1. What is Git?
+
+Simplify, Git is a tool that helps developers keep track of changes made to their code. It allows multiple people to work on the same codebase without causing conflicts. It also helps developers undo changes or experiment with new features without affecting the main codebase. Git is widely used in software development because it is flexible, fast, and reliable. There are also many tools and services available that integrate with Git, making it easy to use in various development workflows.
+
+You can think of Git as a time machine that allows you to travel back to previous versions of your code. It also allows you to travel to different timelines, where you can create new versions of your code without affecting the main timeline. This is useful when you want to experiment with new features without affecting the main codebase.
+
+About history of Git, you can check it by yourself [here](https://www.geeksforgeeks.org/history-of-git/).
+
+## I.2. Git Installation and Configuration
 
 # II. GitHub
