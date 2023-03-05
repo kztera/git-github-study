@@ -45,7 +45,7 @@
 4. [Git basic command](#I-3-git-basic-command)
    <details>
            <summary>Menu of command</summary>
-           
+
    4.1. [git status](#I-4-1-git-status)
    4.2. [git init](#I-4-2-git-init)
    4.3. [git add](#I-4-3-git-add)
@@ -62,9 +62,18 @@
    4.14. [git remote](#I-4-14-git-remote)
    4.15. [git push](#I-4-15-git-push)
    4.16. [git pull](#I-4-16-git-pull)
+   4.17. [git fetch](#I-4-17-git-fetch)
+   4.18. [git clone](#I-4-18-git-clone)
+   4.19. [git config](#I-4-19-git-config)
+   4.20. [git mv](#I-4-20-git-mv)
+   4.21. [git rm](#I-4-21-git-rm)
+   4.22. [git restore](#I-4-22-git-restore)
+
    </details>
 
 ### II. [GitHub](#II-github)
+
+---
 
 # I. Git
 
