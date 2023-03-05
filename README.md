@@ -135,4 +135,24 @@ About history of Git, you can check it by yourself [here](https://www.geeksforge
 
 ## I.2. Git Installation and Configuration
 
+### I.2.1. Install Git
+
+You can download Git [here](https://git-scm.com/downloads). After downloading, you can install Git by following the instructions on the screen.
+
+### I.2.2. Configure Git
+
+Config Git is very important. It will help you to identify who you are when you commit changes to the repository. Just open your terminal and type:
+
+```bash
+git config --global user.name [your_username]
+git config --global user.email [your_email]
+```
+
+Example:
+
+```bash
+git config --global user.name "Mr Brown"
+git config --global user.email browninsuit@gmail.com
+```
+
 # II. GitHub
