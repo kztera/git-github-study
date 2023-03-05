@@ -116,6 +116,8 @@ A repository is a storage space where you can keep all the files related to your
 
 ### I.3.2. Working directory
 
+The working directory is the directory on your local computer where you have your Git repository files stored. It's the directory where you make changes to the files in your repository. When you make changes to files in the working directory, Git detects the changes and allows you to stage and commit them to the repository. In other words, the working directory is the place where you do your work and make changes to your code, while the repository is the place where Git tracks and manages those changes.
+
 ### I.3.3. Staging area
 
 ### I.3.4. Commit
