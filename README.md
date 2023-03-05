@@ -6,7 +6,7 @@
 
 ### 1. [Git](#I-git)
 
-1. [What is Git?](#I-1-what-is-git)
+1. [What is Git?](#I-1-what-is-git-?)
 2. [Git Installation and Configuration](#I-2-git-installation-and-configuration)
 
    2.1. [Install Git](#I-2-1-install-git)
@@ -123,9 +123,9 @@
 
 ---
 
-# I. Git
+# I. Git <a name="I-git"></a>
 
-## I.1. What is Git?
+## I.1. What is Git? <a name="I-1-what-is-git-?"></a>
 
 Simplify, Git is a tool that helps developers keep track of changes made to their code. It allows multiple people to work on the same codebase without causing conflicts. It also helps developers undo changes or experiment with new features without affecting the main codebase. Git is widely used in software development because it is flexible, fast, and reliable. There are also many tools and services available that integrate with Git, making it easy to use in various development workflows.
 
@@ -133,13 +133,13 @@ You can think of Git as a time machine that allows you to travel back to previou
 
 About history of Git, you can check it by yourself [here](https://www.geeksforgeeks.org/history-of-git/).
 
-## I.2. Git Installation and Configuration
+## I.2. Git Installation and Configuration <a name="I-2-git-installation-and-configuration"></a>
 
-### I.2.1. Install Git
+### I.2.1. Install Git <a name="I-2-1-install-git"></a>
 
 You can download Git [here](https://git-scm.com/downloads). After downloading, you can install Git by following the instructions on the screen.
 
-### I.2.2. Configure Git
+### I.2.2. Configure Git <a name="I-2-2-configure-git"></a>
 
 Config Git is very important. It will help you to identify who you are when you commit changes to the repository. Just open your terminal and type:
 
