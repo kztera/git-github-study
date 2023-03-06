@@ -26,6 +26,7 @@
       -  [I.3.22. Diff](#i322-diff)
       -  [I.3.23. Status](#i323-status)
       -  [I.3.24. Log](#i324-log)
+      -  [I.3.25. .gitignore](#i325-gitignore)
    -  [I.4. Git basic command](#i4-git-basic-command)
       -  [I.4.1. git status](#i41-git-status)
       -  [I.4.2. git init](#i42-git-init)
@@ -50,8 +51,17 @@
          -  [II.2.1.2. Cloning Non-Github Repos](#ii212-cloning-non-github-repos)
       -  [II.2.3. Setup SSH Key (Optional)](#ii23-setup-ssh-key-optional)
       -  [II.2.4. Create a Repo](#ii24-create-a-repo)
-
-### 2. [GitHub](#II-github)
+      -  [II.2.5. Push to a Repo (git push)](#ii25-push-to-a-repo-git-push)
+      -  [II.2.6. Remote tracking branches](#ii26-remote-tracking-branches)
+         -  [II.2.6.1. Fetching](#ii261-fetching)
+         -  [II.2.6.2. Pulling](#ii262-pulling)
+      -  [II.2.7. Repo visibility and access](#ii27-repo-visibility-and-access)
+      -  [II.2.8. Fork a Repo](#ii28-fork-a-repo)
+      -  [II.2.9. GitHub Collaborators](#ii29-github-collaborators)
+      -  [II.2.10. GitHub gist](#ii210-github-gist)
+      -  [II.2.11. GitHub Pages](#ii211-github-pages)
+      -  [II.2.12. What's the README.md file?](#ii212-whats-the-readmemd-file)
+      -  [II.2.13. LICENSE](#ii213-license)
 
 ---
 
@@ -149,6 +159,8 @@ In Git, a merge is when you combine changes from one branch into another. This a
 
 ### I.3.24. Log
 
+### I.3.25. .gitignore
+
 ## I.4. Git basic command
 
 ### I.4.1. git status
@@ -206,3 +218,25 @@ In summary, Git is a tool for managing code changes locally, while GitHub is a w
 ### II.2.3. Setup SSH Key (Optional)
 
 ### II.2.4. Create a Repo
+
+### II.2.5. Push to a Repo (git push)
+
+### II.2.6. Remote tracking branches
+
+#### II.2.6.1. Fetching
+
+#### II.2.6.2. Pulling
+
+### II.2.7. Repo visibility and access
+
+### II.2.8. Fork a Repo
+
+### II.2.9. GitHub Collaborators
+
+### II.2.10. GitHub gist
+
+### II.2.11. GitHub Pages
+
+### II.2.12. What's the README.md file?
+
+### II.2.13. LICENSE
