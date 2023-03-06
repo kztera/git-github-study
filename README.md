@@ -16,25 +16,16 @@
       -  [I.3.4. Commit](#i34-commit)
       -  [I.3.5. Branch](#i35-branch)
       -  [I.3.6. Merge](#i36-merge)
-      -  [I.3.8. Fork](#i38-fork)
-      -  [I.3.9. Pull request](#i39-pull-request)
-      -  [I.3.10. Clone](#i310-clone)
-      -  [I.3.11. Push](#i311-push)
-      -  [I.3.12. Pull](#i312-pull)
-      -  [I.3.13. Fetch](#i313-fetch)
-      -  [I.3.14. Remote](#i314-remote)
       -  [I.3.15. Origin](#i315-origin)
-      -  [I.3.16. Upstream](#i316-upstream)
-      -  [I.3.17. HEAD](#i317-head)
-      -  [I.3.18. Master](#i318-master)
-      -  [I.3.19. Stash](#i319-stash)
-      -  [I.3.20. Tag](#i320-tag)
-      -  [I.3.21. Revert](#i321-revert)
-      -  [I.3.22. Reset](#i322-reset)
-      -  [I.3.23. Checkout](#i323-checkout)
-      -  [I.3.24. Diff](#i324-diff)
-      -  [I.3.25. Status](#i325-status)
-      -  [I.3.26. Log](#i326-log)
+      -  [I.3.16. HEAD](#i316-head)
+      -  [I.3.17. Master](#i317-master)
+      -  [I.3.18. Stash](#i318-stash)
+      -  [I.3.19. Revert](#i319-revert)
+      -  [I.3.20. Reset](#i320-reset)
+      -  [I.3.21. Checkout](#i321-checkout)
+      -  [I.3.22. Diff](#i322-diff)
+      -  [I.3.23. Status](#i323-status)
+      -  [I.3.24. Log](#i324-log)
    -  [I.4. Git basic command](#i4-git-basic-command)
       -  [I.4.1. git status](#i41-git-status)
       -  [I.4.2. git init](#i42-git-init)
@@ -46,20 +37,19 @@
       -  [I.4.8. git merge](#i48-git-merge)
       -  [I.4.9. git diff](#i49-git-diff)
       -  [I.4.10. git stash](#i410-git-stash)
-      -  [I.4.11. git tag](#i411-git-tag)
-      -  [I.4.12. git revert](#i412-git-revert)
-      -  [I.4.13. git reset](#i413-git-reset)
-      -  [I.4.14. git remote](#i414-git-remote)
-      -  [I.4.15. git push](#i415-git-push)
-      -  [I.4.16. git pull](#i416-git-pull)
-      -  [I.4.17. git fetch](#i417-git-fetch)
-      -  [I.4.18. git clone](#i418-git-clone)
-      -  [I.4.19. git config](#i419-git-config)
-      -  [I.4.20. git mv](#i420-git-mv)
-      -  [I.4.21. git rm](#i421-git-rm)
-      -  [I.4.22. git restore](#i422-git-restore)
+      -  [I.4.11. git reset](#i411-git-reset)
+      -  [I.4.12. git config](#i412-git-config)
+      -  [I.4.13. git mv](#i413-git-mv)
+      -  [I.4.14. git rm](#i414-git-rm)
+      -  [I.4.15. git restore](#i415-git-restore)
 -  [II. GitHub](#ii-github)
    -  [II.1. What's the difference between Git and GitHub?](#ii1-whats-the-difference-between-git-and-github)
+   -  [II.2. GitHub basic](#ii2-github-basic)
+      -  [II.2.1. Clone a Repo](#ii21-clone-a-repo)
+         -  [II.2.1.1. Cloning Github Repos With Git Clone](#ii211-cloning-github-repos-with-git-clone)
+         -  [II.2.1.2. Cloning Non-Github Repos](#ii212-cloning-non-github-repos)
+      -  [II.2.3. Setup SSH Key (Optional)](#ii23-setup-ssh-key-optional)
+      -  [II.2.4. Create a Repo](#ii24-create-a-repo)
 
 ### 2. [GitHub](#II-github)
 
@@ -121,7 +111,7 @@ The working directory is the directory on your local computer where you have you
 
 ### I.3.3. Staging area
 
-In technical terms, the staging area is the middle ground between what you have done to your files (also known as the [working directory](<(#i32-working-directory)>)) and what you had last committed (the [HEAD](#i317-head) commit). As the name implies, the staging area gives you space to prepare (stage) the changes that will be reflected on the next [commit](#i34-commit).
+In technical terms, the staging area is the middle ground between what you have done to your files (also known as the [working directory](#i32-working-directory) and what you had last committed (the [HEAD](#i317-head) commit). As the name implies, the staging area gives you space to prepare (stage) the changes that will be reflected on the next [commit](#i34-commit).
 
 ### I.3.4. Commit
 
@@ -137,43 +127,27 @@ Branches are important in Git because they allow developers to work on multiple 
 
 ### I.3.6. Merge
 
-### I.3.8. Fork
-
-### I.3.9. Pull request
-
-### I.3.10. Clone
-
-### I.3.11. Push
-
-### I.3.12. Pull
-
-### I.3.13. Fetch
-
-### I.3.14. Remote
+In Git, a merge is when you combine changes from one branch into another. This allows you to incorporate changes made in a separate branch back into the main codebase. Merging is important because it allows developers to work on separate branches without interfering with each other. It's like taking different versions of a story and combining them into a single, cohesive narrative. Once the changes are merged, you have a complete picture of the changes made to the codebase.
 
 ### I.3.15. Origin
 
-### I.3.16. Upstream
+### I.3.16. HEAD
 
-### I.3.17. HEAD
+### I.3.17. Master
 
-### I.3.18. Master
+### I.3.18. Stash
 
-### I.3.19. Stash
+### I.3.19. Revert
 
-### I.3.20. Tag
+### I.3.20. Reset
 
-### I.3.21. Revert
+### I.3.21. Checkout
 
-### I.3.22. Reset
+### I.3.22. Diff
 
-### I.3.23. Checkout
+### I.3.23. Status
 
-### I.3.24. Diff
-
-### I.3.25. Status
-
-### I.3.26. Log
+### I.3.24. Log
 
 ## I.4. Git basic command
 
@@ -197,29 +171,15 @@ Branches are important in Git because they allow developers to work on multiple 
 
 ### I.4.10. git stash
 
-### I.4.11. git tag
+### I.4.11. git reset
 
-### I.4.12. git revert
+### I.4.12. git config
 
-### I.4.13. git reset
+### I.4.13. git mv
 
-### I.4.14. git remote
+### I.4.14. git rm
 
-### I.4.15. git push
-
-### I.4.16. git pull
-
-### I.4.17. git fetch
-
-### I.4.18. git clone
-
-### I.4.19. git config
-
-### I.4.20. git mv
-
-### I.4.21. git rm
-
-### I.4.22. git restore
+### I.4.15. git restore
 
 ---
 
@@ -234,3 +194,15 @@ Git is a distributed version control system that allows developers to keep track
 GitHub, on the other hand, is a web-based platform that provides hosting for Git repositories. It allows developers to store their Git repositories on GitHub's servers and collaborate with others on their projects. GitHub provides a user-friendly interface for managing Git repositories, as well as features like pull requests, issue tracking, and project management tools.
 
 In summary, Git is a tool for managing code changes locally, while GitHub is a web-based platform that provides hosting for Git repositories and collaboration tools. While Git can be used independently of GitHub, GitHub relies on Git as its underlying technology.
+
+## II.2. GitHub basic
+
+### II.2.1. Clone a Repo
+
+#### II.2.1.1. Cloning Github Repos With Git Clone
+
+#### II.2.1.2. Cloning Non-Github Repos
+
+### II.2.3. Setup SSH Key (Optional)
+
+### II.2.4. Create a Repo
