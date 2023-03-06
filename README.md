@@ -60,7 +60,7 @@
       -  [II.2.9. GitHub Collaborators](#ii29-github-collaborators)
       -  [II.2.10. GitHub gist](#ii210-github-gist)
       -  [II.2.11. GitHub Pages](#ii211-github-pages)
-      -  [II.2.12. What's the README.md file?](#ii212-whats-the-readmemd-file)
+      -  [II.2.12. What's the README file?](#ii212-whats-the-readme-file)
       -  [II.2.13. LICENSE](#ii213-license)
 
 ---
@@ -229,7 +229,17 @@ In summary, Git is a tool for managing code changes locally, while GitHub is a w
 
 ### II.2.7. Repo visibility and access
 
+A repository can be public or private. Public repositories are visible to everyone, while private repositories are only visible to you and the people you choose to share them with. You can also choose to make your repository public or private when you create it and change it at any time.
+
+![repo-visibility](img/github-repo-visibility.png)
+
 ### II.2.8. Fork a Repo
+
+Forking a repository is a way to create a copy of the original repository on your GitHub account. Forking a repository allows you to freely experiment with changes without affecting the original project. Once you're done experimenting, you can submit a pull request to the original project to propose your changes.
+
+In other words, forking a repository is a way to contribute to an open source project without having to be a collaborator on the project. You can fork a repository, make changes to the code, and submit a pull request to the original repository to propose your changes.
+
+![fork](img/git-fork.png)
 
 ### II.2.9. GitHub Collaborators
 
@@ -237,6 +247,12 @@ In summary, Git is a tool for managing code changes locally, while GitHub is a w
 
 ### II.2.11. GitHub Pages
 
-### II.2.12. What's the README.md file?
+GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. You can use GitHub Pages to host a website for your project directly from a GitHub repository.
+
+### II.2.12. What's the README file?
+
+I found a repo talk about it. You can read it [here](https://github.com/margittennosaar/markdown_study_materials). It also write about markdown and how to write a good README file
 
 ### II.2.13. LICENSE
+
+License is a legal document that gives you permission to use, copy, modify, and distribute the software. It's important to include a license in your project because it protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. In other words, a license is a legal document that protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. A popular license is the MIT license, which allows people to use your code for any purpose, as long as they give you credit.
