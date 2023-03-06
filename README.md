@@ -4,59 +4,61 @@
 
 <h1> Table of Contents </h1>
 
-- [I. Git](#i-git)
-  - [I.1. What is Git?](#i1-what-is-git)
-  - [I.2. Git Installation and Configuration](#i2-git-installation-and-configuration)
-    - [I.2.1. Install Git](#i21-install-git)
-    - [I.2.2. Configure Git](#i22-configure-git)
-  - [I.3. Git terms](#i3-git-terms)
-    - [I.3.1. Repository](#i31-repository)
-    - [I.3.2. Working directory](#i32-working-directory)
-    - [I.3.3. Staging area](#i33-staging-area)
-    - [I.3.4. Commit](#i34-commit)
-    - [I.3.5. Branch](#i35-branch)
-    - [I.3.6. Merge](#i36-merge)
-    - [I.3.15. Origin](#i315-origin)
-    - [I.3.16. HEAD](#i316-head)
-    - [I.3.17. Master](#i317-master)
-    - [I.3.18. Stash](#i318-stash)
-    - [I.3.19. Log](#i319-log)
-    - [I.3.20. .gitignore](#i320-gitignore)
-  - [I.4. Git basic command](#i4-git-basic-command)
-    - [I.4.1. git status](#i41-git-status)
-    - [I.4.2. git init](#i42-git-init)
-    - [I.4.3. git add](#i43-git-add)
-    - [I.4.4. git commit](#i44-git-commit)
-    - [I.4.5. git log](#i45-git-log)
-    - [I.4.6. git branch](#i46-git-branch)
-    - [I.4.7. git checkout and git switch](#i47-git-checkout-and-git-switch)
-    - [I.4.8. git merge](#i48-git-merge)
-    - [I.4.9. git diff](#i49-git-diff)
-    - [I.4.10. git stash](#i410-git-stash)
-    - [I.4.11. git reset](#i411-git-reset)
-    - [I.4.12. git config](#i412-git-config)
-    - [I.4.13. git mv](#i413-git-mv)
-    - [I.4.14. git rm](#i414-git-rm)
-    - [I.4.15. git restore](#i415-git-restore)
-- [II. GitHub](#ii-github)
-  - [II.1. What's the difference between Git and GitHub?](#ii1-whats-the-difference-between-git-and-github)
-  - [II.2. GitHub basic](#ii2-github-basic)
-    - [II.2.1. Clone a Repo](#ii21-clone-a-repo)
-      - [II.2.1.1. Cloning Github Repos With Git Clone](#ii211-cloning-github-repos-with-git-clone)
-      - [II.2.1.2. Cloning Non-Github Repos](#ii212-cloning-non-github-repos)
-    - [II.2.3. Setup SSH Key (Optional)](#ii23-setup-ssh-key-optional)
-    - [II.2.4. Create a Repo](#ii24-create-a-repo)
-    - [II.2.5. Push to a Repo (git push)](#ii25-push-to-a-repo-git-push)
-    - [II.2.6. Remote tracking branches](#ii26-remote-tracking-branches)
-      - [II.2.6.1. Fetching](#ii261-fetching)
-      - [II.2.6.2. Pulling](#ii262-pulling)
-    - [II.2.7. Repo visibility and access](#ii27-repo-visibility-and-access)
-    - [II.2.8. Fork a Repo](#ii28-fork-a-repo)
-    - [II.2.9. GitHub Collaborators](#ii29-github-collaborators)
-    - [II.2.10. GitHub gist](#ii210-github-gist)
-    - [II.2.11. GitHub Pages](#ii211-github-pages)
-    - [II.2.12. What's the README file?](#ii212-whats-the-readme-file)
-    - [II.2.13. LICENSE](#ii213-license)
+-  [I. Git](#i-git)
+   -  [I.1. What is Git?](#i1-what-is-git)
+   -  [I.2. Git Installation and Configuration](#i2-git-installation-and-configuration)
+      -  [I.2.1. Install Git](#i21-install-git)
+      -  [I.2.2. Configure Git](#i22-configure-git)
+   -  [I.3. Git terms](#i3-git-terms)
+      -  [I.3.1. Repository](#i31-repository)
+      -  [I.3.2. Working directory](#i32-working-directory)
+      -  [I.3.3. Staging area](#i33-staging-area)
+      -  [I.3.4. Commit](#i34-commit)
+      -  [I.3.5. Branch](#i35-branch)
+      -  [I.3.6. Merge](#i36-merge)
+      -  [I.3.15. Origin](#i315-origin)
+      -  [I.3.16. HEAD](#i316-head)
+      -  [I.3.17. Master](#i317-master)
+      -  [I.3.18. Stash](#i318-stash)
+      -  [I.3.19. Log](#i319-log)
+      -  [I.3.20. .gitignore](#i320-gitignore)
+   -  [I.4. Git basic command](#i4-git-basic-command)
+      -  [I.4.1. git status](#i41-git-status)
+      -  [I.4.2. git init](#i42-git-init)
+      -  [I.4.3. git add](#i43-git-add)
+      -  [I.4.4. git commit](#i44-git-commit)
+      -  [I.4.5. git log](#i45-git-log)
+      -  [I.4.6. git branch](#i46-git-branch)
+      -  [I.4.7. git checkout and git switch](#i47-git-checkout-and-git-switch)
+      -  [I.4.8. git merge](#i48-git-merge)
+      -  [I.4.9. git diff](#i49-git-diff)
+      -  [I.4.10. git stash](#i410-git-stash)
+      -  [I.4.11. git reset](#i411-git-reset)
+      -  [I.4.12. git config](#i412-git-config)
+      -  [I.4.13. git mv](#i413-git-mv)
+      -  [I.4.14. git rm](#i414-git-rm)
+      -  [I.4.15. git restore](#i415-git-restore)
+-  [II. GitHub](#ii-github)
+   -  [II.1. What's the difference between Git and GitHub?](#ii1-whats-the-difference-between-git-and-github)
+   -  [II.2. GitHub basic](#ii2-github-basic)
+      -  [II.2.1. Clone a Repo](#ii21-clone-a-repo)
+         -  [II.2.1.1. Cloning Github Repos With Git Clone](#ii211-cloning-github-repos-with-git-clone)
+         -  [II.2.1.2. Cloning Non-Github Repos](#ii212-cloning-non-github-repos)
+      -  [II.2.3. Setup SSH Key (Optional)](#ii23-setup-ssh-key-optional)
+      -  [II.2.4. Create a Repo](#ii24-create-a-repo)
+         -  [II.2.4.1. Create a new repository from scratch](#ii241-create-a-new-repository-from-scratch)
+         -  [II.2.4.2. Import an existing project](#ii242-import-an-existing-project)
+      -  [II.2.5. Push to a Repo (git push)](#ii25-push-to-a-repo-git-push)
+      -  [II.2.6. Remote tracking branches](#ii26-remote-tracking-branches)
+         -  [II.2.6.1. Fetching](#ii261-fetching)
+         -  [II.2.6.2. Pulling](#ii262-pulling)
+      -  [II.2.7. Repo visibility and access](#ii27-repo-visibility-and-access)
+      -  [II.2.8. Fork a Repo](#ii28-fork-a-repo)
+      -  [II.2.9. GitHub Collaborators](#ii29-github-collaborators)
+      -  [II.2.10. GitHub gist](#ii210-github-gist)
+      -  [II.2.11. GitHub Pages](#ii211-github-pages)
+      -  [II.2.12. What's the README file?](#ii212-whats-the-readme-file)
+      -  [II.2.13. LICENSE](#ii213-license)
 
 ---
 
@@ -278,6 +280,8 @@ git stash apply stash@{1}
 
 ### I.4.11. git reset
 
+`git reset` is a command that lets you undo changes to the repository. It lets you undo commits, unstage files, and more. This is useful when you want to undo changes you've made to your code. You can use `git reset --hard` to undo all changes to the repository.
+
 ### I.4.12. git config
 
 `git config` is a command that lets you configure Git. You can use it to set up your name and email address, change the default text editor, and more. You have two options for configuring Git: you can use the `--global` flag to configure Git for all repositories on your computer, or you can use the `--local` flag to configure Git for a specific repository.
@@ -335,6 +339,18 @@ A copy of the repo will be downloaded to your local computer.
 
 ### II.2.4. Create a Repo
 
+You can create a new repository on GitHub in two ways: you can create a new repository from scratch, or you can create a new repository by importing an existing project.
+
+#### II.2.4.1. Create a new repository from scratch
+
+First, you need to login to your Github account. Then, click the `+` button on the top right corner of the page, and select `New repository`.
+
+![create-repo](img/github-create-repo.png)
+
+Then, you can create a new repository by following the instructions on the page.
+
+#### II.2.4.2. Import an existing project
+
 ### II.2.5. Push to a Repo (git push)
 
 ### II.2.6. Remote tracking branches
@@ -372,3 +388,5 @@ I found a repo talk about it. You can read it [here](https://github.com/margitte
 ### II.2.13. LICENSE
 
 License is a legal document that gives you permission to use, copy, modify, and distribute the software. It's important to include a license in your project because it protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. In other words, a license is a legal document that protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. A popular license is the MIT license, which allows people to use your code for any purpose, as long as they give you credit.
+
+You can add a license to your project by creating a file called `LICENSE` in your repository. You can also add a license to an existing repository by clicking the `Add a license` button on the repository's page.
