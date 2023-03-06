@@ -34,7 +34,7 @@
       -  [I.4.4. git commit](#i44-git-commit)
       -  [I.4.5. git log](#i45-git-log)
       -  [I.4.6. git branch](#i46-git-branch)
-      -  [I.4.7. git checkout](#i47-git-checkout)
+      -  [I.4.7. git checkout and git switch](#i47-git-checkout-and-git-switch)
       -  [I.4.8. git merge](#i48-git-merge)
       -  [I.4.9. git diff](#i49-git-diff)
       -  [I.4.10. git stash](#i410-git-stash)
@@ -165,31 +165,116 @@ In Git, a merge is when you combine changes from one branch into another. This a
 
 ### I.4.1. git status
 
+`git status` is a command that shows the status of the [working directory](#i32-working-directory) and the [staging area](#i33-staging-area). It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. This is useful when you want to check the status of your repository before committing your changes.
+
+```bash
+git status
+```
+
+Example output:
+
+```bash
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
 ### I.4.2. git init
+
+`git init` is a command to starts a new Git repository in a directory. This allows you to track changes to your code over time and collaborate with others. It's like setting up a new journal to write down your thoughts and ideas. Once you've initialized a Git repository, you can start making commits to track changes to your code.
+
+```bash
+git init
+```
+
+Output:
+
+```bash
+Initialized empty Git repository in C:/Users/username/Desktop/MyProject/.git/
+```
 
 ### I.4.3. git add
 
+In Git, `git add` is a command that adds files to the staging area in preparation for committing them to the repository. When you make changes to your code, you can use "git add" to tell Git which files you want to include in your next commit. You can use `git add .` to add all files in the working directory to the staging area.
+
 ### I.4.4. git commit
+
+`git commit` is a command that saves changes to the repository. When you make changes to your code, you can use "git commit" to save those changes to the repository. Each commit has a unique identifier that allows you to track the changes you've made over time. This is useful for collaboration, debugging, and keeping track of your project's history.
+
+With `git commit`, you can use the `-m` flag to add a message to your commit. This is useful for keeping track of what changes you made in each commit. You can also use the `-a` flag to automatically stage all changes before committing them to the repository.
+
+```bash
+git commit -m "Add README.md"
+```
+
+Or
+
+```bash
+git commit -am "Add README.md"
+```
+
+`git commit -am` is equivalent to `git add .` followed by `git commit -m`.
+
+Message should be in present tense, and should not be capitalized. Make it short and meaningful.
 
 ### I.4.5. git log
 
+`git log` is a command that shows the commit history for a repository. It lets you see the commit messages, the author, and the date of each commit. This is useful when you want to check the history of your repository to see what changes have been made.
+
 ### I.4.6. git branch
 
-### I.4.7. git checkout
+`git branch` is a command that shows the [branches](#i35-branch) in a repository. It lets you see which branches exist and which branch you're currently on. This is useful when you want to check the status of your repository before committing your changes.
+
+When you want delete a branch, use `git branch -d <branch_name>`.
+
+### I.4.7. git checkout and git switch
+
+To create a new branch, use `git branch <branch_name>`. To switch to an existing branch, use `git checkout <branch_name>`. To create a new branch and switch to it, use `git checkout -b <branch_name>`.
+
+But now, we have a new command `git switch` to switch between branches. It is more intuitive than `git checkout`. To create a new branch and switch to it, use `git switch -c <branch_name>`.
 
 ### I.4.8. git merge
 
+`git merge` is a command that allows you to combine changes from one branch into another. When you merge branches, Git takes the changes made in the source branch and applies them to the target branch.
+
+Merging is useful because it allows you to incorporate changes made in a separate branch back into the main codebase. Once changes are made in a separate branch, they can be reviewed and tested before being merged back into the main codebase.
+
+There are different ways to perform a merge in Git, depending on the circumstances. For example, you can perform a fast-forward merge when the target branch hasn't diverged significantly from the source branch, or you can perform a three-way merge when the two branches have conflicting changes.
+
 ### I.4.9. git diff
 
+`git diff` is a command that shows the differences between the working directory and the staging area, or between the staging area and the repository. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. This is useful when you want to check the status of your repository before committing your changes.
+
+Besides, you can use `git diff <branch_name>` to compare the differences between the current branch and the specified branch.
+
 ### I.4.10. git stash
+
+`git stash` is a command that temporarily stores changes to the working directory. It lets you save changes to your code without committing them to the repository. This is useful when you want to switch branches but don't want to commit your changes yet.
 
 ### I.4.11. git reset
 
 ### I.4.12. git config
 
+`git config` is a command that lets you configure Git. You can use it to set up your name and email address, change the default text editor, and more. You have two options for configuring Git: you can use the `--global` flag to configure Git for all repositories on your computer, or you can use the `--local` flag to configure Git for a specific repository.
+
 ### I.4.13. git mv
 
+`git mv` is a command that lets you rename files and move them to different directories. It's like using the `mv` command to move a file, but it also tells Git to track the file's new location. This is useful when you want to rename a file or move it to a different directory.
+Example, when you want rename `README.md` to `README`, you can use `git mv` to do it.
+
+```bash
+git mv README.md README
+```
+
 ### I.4.14. git rm
+
+`git rm` is a command that lets you remove files from the working directory and the staging area. It's like using the `rm` command to remove a file, but it also tells Git to stop tracking the file. This is useful when you want to remove a file from your repository.
 
 ### I.4.15. git restore
 
@@ -256,3 +341,7 @@ I found a repo talk about it. You can read it [here](https://github.com/margitte
 ### II.2.13. LICENSE
 
 License is a legal document that gives you permission to use, copy, modify, and distribute the software. It's important to include a license in your project because it protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. In other words, a license is a legal document that protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. A popular license is the MIT license, which allows people to use your code for any purpose, as long as they give you credit.
+
+```
+
+```
