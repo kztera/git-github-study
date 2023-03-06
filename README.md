@@ -121,9 +121,19 @@ The working directory is the directory on your local computer where you have you
 
 ### I.3.3. Staging area
 
+In technical terms, the staging area is the middle ground between what you have done to your files (also known as the [working directory](<(#i32-working-directory)>)) and what you had last committed (the [HEAD](#i317-head) commit). As the name implies, the staging area gives you space to prepare (stage) the changes that will be reflected on the next [commit](#i34-commit).
+
 ### I.3.4. Commit
 
+In Git, a commit is like taking a picture of the changes you made to your code. When you make changes to your code, you can use the "git commit" command to save those changes to the Git repository. Each commit has a unique identifier that allows you to track the changes you've made over time. This is useful for collaboration, debugging, and keeping track of your project's history.
+
 ### I.3.5. Branch
+
+In Git, a branch is a separate line of development that allows you to work on new features or make changes to your code without affecting the main codebase.
+
+When you create a branch, you're essentially creating a copy of the current codebase. You can make changes to the files in the branch without affecting the main codebase. This allows you to experiment with new features or make changes without worrying about breaking the existing code. Once you're done making changes in the branch, you can merge the changes back into the main codebase.
+
+Branches are important in Git because they allow developers to work on multiple features or bug fixes at the same time without interfering with each other. They also allow developers to collaborate on the same codebase without stepping on each other's toes. Overall, branches are a powerful feature in Git that allow developers to work more efficiently and safely.
 
 ### I.3.6. Merge
 
