@@ -45,6 +45,7 @@
          -  [II.2.1.1. Cloning Github Repos With Git Clone](#ii211-cloning-github-repos-with-git-clone)
          -  [II.2.1.2. Cloning Non-Github Repos](#ii212-cloning-non-github-repos)
       -  [II.2.3. Setup SSH Key (Optional)](#ii23-setup-ssh-key-optional)
+         -  [II.2.3.1. Generate SSH Key](#ii231-generate-ssh-key)
       -  [II.2.4. Create a Repo](#ii24-create-a-repo)
          -  [II.2.4.1. Create a new repository from scratch](#ii241-create-a-new-repository-from-scratch)
          -  [II.2.4.2. Import an existing project](#ii242-import-an-existing-project)
@@ -55,10 +56,9 @@
       -  [II.2.7. Repo visibility and access](#ii27-repo-visibility-and-access)
       -  [II.2.8. Fork a Repo](#ii28-fork-a-repo)
       -  [II.2.9. GitHub Collaborators](#ii29-github-collaborators)
-      -  [II.2.10. GitHub gist](#ii210-github-gist)
-      -  [II.2.11. GitHub Pages](#ii211-github-pages)
-      -  [II.2.12. What's the README file?](#ii212-whats-the-readme-file)
-      -  [II.2.13. LICENSE](#ii213-license)
+      -  [II.2.10. GitHub Pages](#ii210-github-pages)
+      -  [II.2.11. What's the README file?](#ii211-whats-the-readme-file)
+      -  [II.2.12. LICENSE](#ii212-license)
 
 ---
 
@@ -301,6 +301,8 @@ git mv README.md README
 
 ### I.4.15. git restore
 
+You can read it in [here](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor) to know the difference between `git restore` and `git reset`.
+
 ---
 
 # II. GitHub
@@ -337,13 +339,17 @@ A copy of the repo will be downloaded to your local computer.
 
 ### II.2.3. Setup SSH Key (Optional)
 
+SSH key is a way to authenticate yourself to Github without using your username and password. It's more secure than using username and password. You can use SSH key to push to a repo.
+
+#### II.2.3.1. Generate SSH Key
+
 ### II.2.4. Create a Repo
 
 You can create a new repository on GitHub in two ways: you can create a new repository from scratch, or you can create a new repository by importing an existing project.
 
 #### II.2.4.1. Create a new repository from scratch
 
-First, you need to login to your Github account. Then, click the `+` button on the top right corner of the page, and select `New repository`.
+First, you need to login to your Github account. Then, click the `New` button on the top right corner of the page Reopositories.
 
 ![create-repo](img/github-create-repo.png)
 
@@ -351,13 +357,33 @@ Then, you can create a new repository by following the instructions on the page.
 
 #### II.2.4.2. Import an existing project
 
+Go to the website https://github.com/new/import, and follow the instructions on the page.
+
 ### II.2.5. Push to a Repo (git push)
+
+Pushing to GitHub means uploading to a GitHub repository.
+
+Maybe you just created a new public repository for a project and you want to upload all your files to it. Or maybe you're continually working on a project from a private GitHub repository for your company, and you want to upload the latest changes that you've made.
+
+You can follow the steps when creating a new repository to push to a repo like this:
+
+![push-to-repo](img/github-push-to-repo.png)
 
 ### II.2.6. Remote tracking branches
 
+Remote tracking branches are references to the state of branches in your remote repositories. They're local branches that you can't move; they're moved automatically whenever you do any network communication. Remote tracking branches act as bookmarks to remind you where the branches on your remote repositories were the last time you connected to them.
+
 #### II.2.6.1. Fetching
 
+Fetching is the process of downloading commits, files, and refs from a remote repository into your local repository. Fetching is what you do when you want to see what everybody else has been working on. Fetching is the opposite of pushing.
+
+Each remote you have is stored under a shortname. By default, git gives the name `origin` to the server you cloned from, so that's what you'll see in most of the examples in this book. If you run `git remote -v`, you can see all the remote repositories you have configured.
+
 #### II.2.6.2. Pulling
+
+Pulling is the act of fetching from a remote repository and then immediately merging it into your local repository. Pulling is what you do when you want to download changes and immediately merge them into your working branch. Pulling is essentially a combination of fetching and merging.
+
+In a workflow where you're using a remote repository as a central point for collaboration, you'll want to make sure that you're always working with the most up-to-date changes. The best way to do this is to always fetch and merge data from the remote repository before you start working on a new feature or bug fix.
 
 ### II.2.7. Repo visibility and access
 
@@ -375,17 +401,21 @@ In other words, forking a repository is a way to contribute to an open source pr
 
 ### II.2.9. GitHub Collaborators
 
-### II.2.10. GitHub gist
+Collaborators are people with read and write access to a repository who can work with you on a project. You can add collaborators to a repository when you create it or at any time after. You can also remove collaborators at any time.
 
-### II.2.11. GitHub Pages
+[Documentation](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)
+
+### II.2.10. GitHub Pages
 
 GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. You can use GitHub Pages to host a website for your project directly from a GitHub repository.
 
-### II.2.12. What's the README file?
+Since GitHub pages support custom domains, you can host a static website on GitHub pages free of charge, with deploys straight from GitHub. To know more about GitHub pages, you can read [this](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+
+### II.2.11. What's the README file?
 
 I found a repo talk about it. You can read it [here](https://github.com/margittennosaar/markdown_study_materials). It also write about markdown and how to write a good README file
 
-### II.2.13. LICENSE
+### II.2.12. LICENSE
 
 License is a legal document that gives you permission to use, copy, modify, and distribute the software. It's important to include a license in your project because it protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. In other words, a license is a legal document that protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. A popular license is the MIT license, which allows people to use your code for any purpose, as long as they give you credit.
 
