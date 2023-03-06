@@ -260,6 +260,22 @@ Besides, you can use `git diff <branch_name>` to compare the differences between
 
 Use `git stast pop` to remove the most recent stash from the stash list and re-apply them to the working directory. `git stash list` to list all stashes. `git stash drop` to remove the most recent stash from the stash list. `git stash apply` to apply to the working directory but not remove it from the stash list. This is useful when you want to apply the same stash to multiple branches.
 
+So, How about multiple stashes? Use `git stash list` to list all stashes. Use `git stash apply stash@{<index>}` to apply the stash at the specified index. Use `git stash drop stash@{<index>}` to remove the stash at the specified index.
+
+Example:
+
+```bash
+git stash list
+
+stash@{0}: WIP on master: 4d1b0a9 Add README.md
+stash@{1}: WIP on master: 4d1b0a9 Add README.md
+stash@{2}: WIP on master: 4d1b0a9 Add README.md
+```
+
+```bash
+git stash apply stash@{1}
+```
+
 ### I.4.11. git reset
 
 ### I.4.12. git config
@@ -356,11 +372,3 @@ I found a repo talk about it. You can read it [here](https://github.com/margitte
 ### II.2.13. LICENSE
 
 License is a legal document that gives you permission to use, copy, modify, and distribute the software. It's important to include a license in your project because it protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. In other words, a license is a legal document that protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. A popular license is the MIT license, which allows people to use your code for any purpose, as long as they give you credit.
-
-```
-
-```
-
-```
-
-```
