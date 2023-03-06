@@ -141,11 +141,19 @@ In Git, a merge is when you combine changes from one branch into another. This a
 
 ### I.3.15. Origin
 
+In Git, the origin is the remote repository that you cloned from. It's the repository that you use to push and pull changes to and from. When you clone a repository, Git automatically creates a remote connection to the original repository. This is called the "origin" remote. You can use the "git remote" command to view the remote connections in your repository.
+
 ### I.3.16. HEAD
+
+HEAD is a reference to the last commit in the current branch. It's like a pointer that points to the last commit in the current branch. When you make changes to your code, Git creates a new commit and moves the HEAD pointer to point to the new commit. This is useful because it allows you to easily see which commit you're currently working on.
 
 ### I.3.17. Master
 
+The default branch in Git is called "master". When you create a new repository, Git automatically creates a branch called "master" and sets it as the default branch. You can use the "git branch" command to view the branches in your repository.
+
 ### I.3.18. Stash
+
+Stashing is a way to temporarily save changes that you don't want to commit immediately. It's useful when you want to switch branches but don't want to commit the changes you've made to the current branch.
 
 ### I.3.19. Revert
 
