@@ -141,11 +141,11 @@ In Git, a merge is when you combine changes from one branch into another. This a
 
 ### I.3.15. Origin
 
-In Git, the origin is the remote repository that you cloned from. It's the repository that you use to push and pull changes to and from. When you clone a repository, Git automatically creates a remote connection to the original repository. This is called the "origin" remote. You can use the "git remote" command to view the remote connections in your repository.
+In Git, the origin is the remote [repository](#i31-repository) that you cloned from. It's the repository that you use to push and pull changes to and from. When you clone a repository, Git automatically creates a remote connection to the original repository. This is called the "origin" remote. You can use the `git remote` command to view the remote connections in your repository.
 
 ### I.3.16. HEAD
 
-HEAD is a reference to the last commit in the current branch. It's like a pointer that points to the last commit in the current branch. When you make changes to your code, Git creates a new commit and moves the HEAD pointer to point to the new commit. This is useful because it allows you to easily see which commit you're currently working on.
+HEAD is a reference to the last commit in the current [branch](#i35-branch). It's like a pointer that points to the last commit in the current branch. When you make changes to your code, Git creates a new commit and moves the HEAD pointer to point to the new commit. This is useful because it allows you to easily see which commit you're currently working on.
 
 ### I.3.17. Master
 
@@ -308,6 +308,18 @@ In summary, Git is a tool for managing code changes locally, while GitHub is a w
 
 #### II.2.1.1. Cloning Github Repos With Git Clone
 
+When you want download a repo from Github, you can use `git clone` to do it. First, you need to get the repo's URL. You can get it from the repo's page on Github.
+
+![repo-url](img/github-link-of-repo.png)
+
+Then, you can use `git clone` to download the repo.
+
+```bash
+git clone https://github.com/kztera/git-github-study.git
+```
+
+A copy of the repo will be downloaded to your local computer.
+
 #### II.2.1.2. Cloning Non-Github Repos
 
 ### II.2.3. Setup SSH Key (Optional)
@@ -351,6 +363,10 @@ I found a repo talk about it. You can read it [here](https://github.com/margitte
 ### II.2.13. LICENSE
 
 License is a legal document that gives you permission to use, copy, modify, and distribute the software. It's important to include a license in your project because it protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. In other words, a license is a legal document that protects you from people who want to use your code without giving you credit. It also protects you from people who want to use your code to make money without paying you. A popular license is the MIT license, which allows people to use your code for any purpose, as long as they give you credit.
+
+```
+
+```
 
 ```
 
