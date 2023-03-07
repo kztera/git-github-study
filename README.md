@@ -39,6 +39,7 @@
     - [I.4.14. git rm](#i414-git-rm)
     - [I.4.15. git restore](#i415-git-restore)
     - [I.4.16. git revert](#i416-git-revert)
+    - [I.4.17. git alias](#i417-git-alias)
 - [II. Github](#ii-github)
   - [II.1. What's the difference between Git and Github?](#ii1-whats-the-difference-between-git-and-github)
   - [II.2. Github basic](#ii2-github-basic)
@@ -49,10 +50,10 @@
     - [II.2.4. Create a Repo](#ii24-create-a-repo)
       - [II.2.4.1. Create a new repository from scratch](#ii241-create-a-new-repository-from-scratch)
       - [II.2.4.2. Import an existing project](#ii242-import-an-existing-project)
-    - [II.2.5. Push to a Repo (git push)](#ii25-push-to-a-repo-git-push)
-    - [II.2.6. Remote tracking branches](#ii26-remote-tracking-branches)
-      - [II.2.6.1. Fetching](#ii261-fetching)
-      - [II.2.6.2. Pulling](#ii262-pulling)
+    - [II.2.5. Remote tracking branches](#ii25-remote-tracking-branches)
+      - [II.2.5.1. Fetching](#ii251-fetching)
+      - [II.2.5.2. Pulling](#ii252-pulling)
+    - [II.2.6. Push to a Repo (git push)](#ii26-push-to-a-repo-git-push)
     - [II.2.7. Repo visibility and access](#ii27-repo-visibility-and-access)
     - [II.2.8. Fork a Repo](#ii28-fork-a-repo)
     - [II.2.9. Github Collaborators](#ii29-github-collaborators)
@@ -368,6 +369,23 @@ If you want to reverse commits that you haven't shared with other, use **`reset`
 
 [git revert docs](https://git-scm.com/docs/git-revert)
 
+### I.4.17. git alias
+
+**Global Git Config**
+Git looks for the global config file at either ~/.gitconfig or ~/.config/git/config. Any configuration variables that we change in the file will be applied across all Git repos.
+
+We can also alter configuration variables from the command line if preferred.
+
+**Adding Aliases**
+
+We can easily set up Git aliases to make our Git experience a bit simpler and faster.
+
+For example, we could define an alias "git ci" instead of having to type "git commit"
+
+Or, we could define a custom git lg command that prints out a custom formatted commit log.
+
+On Internet, you can find many useful aliases, for example [here](https://codersopinion.com/blog/16-awesome-git-aliases-that-you-will-love/).
+
 ---
 
 # II. Github
@@ -435,23 +453,7 @@ Then, you can create a new repository by following the instructions on the page.
 
 Go to the website https://Github.com/new/import, and follow the instructions on the page.
 
-### II.2.5. Push to a Repo (git push)
-
-Pushing to Github means uploading to a Github repository.
-
-Maybe you just created a new public repository for a project and you want to upload all your files to it. Or maybe you're continually working on a project from a private Github repository for your company, and you want to upload the latest changes that you've made.
-
-You can follow the steps when creating a new repository to push to a repo like this:
-
-![push-to-repo](img/github-push-to-repo.png)
-
-**Permissions**
-
-Anyone can clone a repo from Github, provided the repo is **public**. You do not need to be an owner or collaborator to clone a repo. You just need the URL from Github.
-
-Pushing up your own changes to a repo that's another story entirely! You need permisson to do that!
-
-### II.2.6. Remote tracking branches
+### II.2.5. Remote tracking branches
 
 Before we can push anything up to Github, we need to tell Git about our remote repo on Github. We need to setup a "destination" to push up to.
 
@@ -488,17 +490,57 @@ They are not commonly used, but there are commands to rename and remove remotes 
 -  `git remote rename <old-name> <new-name>`: Rename a remote
 -  `git remote remove <remote-name>`: Remove a remote
 
-#### II.2.6.1. Fetching
+#### II.2.5.1. Fetching
 
 Fetching is the process of downloading commits, files, and refs from a remote repository into your local repository. Fetching is what you do when you want to see what everybody else has been working on. Fetching is the opposite of pushing.
 
 Each remote you have is stored under a shortname. By default, git gives the name `origin` to the server you cloned from, so that's what you'll see in most of the examples in this book. If you run `git remote -v`, you can see all the remote repositories you have configured.
 
-#### II.2.6.2. Pulling
+#### II.2.5.2. Pulling
 
 Pulling is the act of fetching from a remote repository and then immediately merging it into your local repository. Pulling is what you do when you want to download changes and immediately merge them into your working branch. Pulling is essentially a combination of fetching and merging.
 
 In a workflow where you're using a remote repository as a central point for collaboration, you'll want to make sure that you're always working with the most up-to-date changes. The best way to do this is to always fetch and merge data from the remote repository before you start working on a new feature or bug fix.
+
+### II.2.6. Push to a Repo (git push)
+
+Now that we have a remote set up, let's push some work up to Github! To do this, we need to use the git push command.
+
+We need to specify the remote we want to push up to AND the specific local branch we want to push up to that remote
+
+```bash
+git push <remote> <branch>
+```
+
+An example:
+
+```bash
+git push origin master
+```
+
+to tells git to push up the master branch to our origin remote.
+
+**Push In Detail**
+
+While we often want to push a local branch up to a remote branch of the same name, we don't have to. We can push up any local branch to any remote branch.
+
+Example: To push a local branch called `pancake` up to a remote branch called `waffle`, we can run:
+
+```bash
+git push origin pancake:waffle
+```
+
+**The -u option**
+
+You can follow the steps when creating a new repository to push to a repo like this:
+
+![push-to-repo](img/github-push-to-repo.png)
+
+**Permissions**
+
+Anyone can clone a repo from Github, provided the repo is **public**. You do not need to be an owner or collaborator to clone a repo. You just need the URL from Github.
+
+Pushing up your own changes to a repo that's another story entirely! You need permisson to do that!
 
 ### II.2.7. Repo visibility and access
 
