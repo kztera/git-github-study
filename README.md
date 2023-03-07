@@ -38,6 +38,7 @@
       -  [I.4.13. git mv](#i413-git-mv)
       -  [I.4.14. git rm](#i414-git-rm)
       -  [I.4.15. git restore](#i415-git-restore)
+      -  [I.4.16. git revert](#i416-git-revert)
 -  [II. GitHub](#ii-github)
    -  [II.1. What's the difference between Git and GitHub?](#ii1-whats-the-difference-between-git-and-github)
    -  [II.2. GitHub basic](#ii2-github-basic)
@@ -345,6 +346,26 @@ modified:   README.md
 You can read it in [here](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor) to know the difference between `git restore` and `git reset`.
 
 [git restore docs](https://git-scm.com/docs/git-restore)
+
+### I.4.16. git revert
+
+`git revert` is similar to `git reset` that they both `undo` changes, but they accomplish it in different ways.
+
+`git reset` actually moves the branch pointer backwards, eliminating commits.
+
+`git revert` instead creates a brand new commit which reverses/undos the changes from a commit. Because it results in a new commit, you will be prompted to enter a commit message.
+
+`git revert` is a safer option than git reset because it creates a new commit. This means that you can revert a commit without losing any of the work you've done since then.
+
+So, **which one should I use?**
+
+Both `git reset` and `git revert` help us reverse changes, but there is a significant difference when it coms to collaboration (which we have yet to discuss but is coming up soon!)
+
+If you want to reverse some commits that other people already have on their machines, you should use **`revert`**.
+
+If you want to reverse commits that you haven't shared with other, use **`reset`** and no one will ever know!
+
+[git revert docs](https://git-scm.com/docs/git-revert)
 
 ---
 
