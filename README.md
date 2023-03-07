@@ -248,6 +248,8 @@ You can use `git checkout HEAD~<number>` to view the code at HEAD - number commi
 
 To go back to the latest commit, use `git checkout master`.
 
+Use `git checkout HEAD <file_name>` to discard changes in the working directory that something you've changed but haven't committed yet. You can replace `HEAD` with `--`. For example, `git checkout -- README.md`.
+
 ### I.4.8. git merge
 
 `git merge` is a command that allows you to combine changes from one branch into another. When you merge branches, Git takes the changes made in the source branch and applies them to the target branch.
@@ -284,9 +286,17 @@ stash@{2}: WIP on master: 4d1b0a9 Add README.md
 git stash apply stash@{1}
 ```
 
+[git stash docs](https://git-scm.com/docs/git-stash)
+
 ### I.4.11. git reset
 
-`git reset` is a command that lets you undo changes to the repository. It lets you undo commits, unstage files, and more. This is useful when you want to undo changes you've made to your code. You can use `git reset --hard` to undo all changes to the repository.
+Suppose you've just made a couple of commits on the master branch, but you actually meant to make them on a separate branch instead. To undo those commits, you can use `git reset`
+
+`git reset <commit-hash> will reset the repo back to a specific commit. The commits are gone but the changes are still there.
+
+If you want to undo both the commit and the actual changes in your file, you can use the `--hard` option. For example, `git reset --hard HEAD~1` will be delee the last commit and associated changes.
+
+[git reset docs](https://git-scm.com/docs/git-reset)
 
 ### I.4.12. git config
 
@@ -307,7 +317,34 @@ git mv README.md README
 
 ### I.4.15. git restore
 
+`git restore` helps with undoing operations. It's a new command, most of the existing Git tutorials and book do not mention it.
+
+Suppose you've made some changes to a file since the last commit. You've saved the file but then realize you don't want to commit those changes anymore. To restore the file to the content in the HEAD, use
+
+```bash
+git restore <file_name>
+```
+
+-  NOTE: The above command is not "undoable". If you have uncommited changes in the file, they will be lost.
+
+`git restore <file_name>` using HEAD as the default source, but we can change that using the `--source` option. For example, `git restore --source=HEAD~1 <file_name>` to restore the file to the content in the HEAD - 1 commit.
+
+And when you want comeback to the latest commit, use `git restore <file_name>`.
+
+Use `git restore --staged <file_name>` to unstage a file.
+
+So many commands to undo changes, right? But you don't need to remember all of them. When you use `git status`, you will receive a message like this:
+
+```bash
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+modified:   README.md
+```
+
 You can read it in [here](https://stackoverflow.com/questions/58003030/what-is-the-git-restore-command-and-what-is-the-difference-between-git-restor) to know the difference between `git restore` and `git reset`.
+
+[git restore docs](https://git-scm.com/docs/git-restore)
 
 ---
 
