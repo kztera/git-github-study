@@ -242,6 +242,12 @@ To create a new branch, use `git branch <branch_name>`. To switch to an existing
 
 But now, we have a new command `git switch` to switch between branches. It is more intuitive than `git checkout`. To create a new branch and switch to it, use `git switch -c <branch_name>`.
 
+In other case, you can use `git checkout <commit-hash>` to view the code at that commit. Don't forget you can use `git log` to see the commit history. We just need the first 7 characters of the commit hash.
+
+You can use `git checkout HEAD~<number>` to view the code at HEAD - number commits. For example, `git checkout HEAD~1` to view the code at HEAD - 1 commit. `git checkout HEAD~2` to view the code at HEAD - 2 commits and so on.
+
+To go back to the latest commit, use `git checkout master`.
+
 ### I.4.8. git merge
 
 `git merge` is a command that allows you to combine changes from one branch into another. When you merge branches, Git takes the changes made in the source branch and applies them to the target branch.
