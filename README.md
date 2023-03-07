@@ -4,62 +4,61 @@
 
 <h1> Table of Contents </h1>
 
--  [I. Git](#i-git)
-   -  [I.1. What is Git?](#i1-what-is-git)
-   -  [I.2. Git Installation and Configuration](#i2-git-installation-and-configuration)
-      -  [I.2.1. Install Git](#i21-install-git)
-      -  [I.2.2. Configure Git](#i22-configure-git)
-   -  [I.3. Git terms](#i3-git-terms)
-      -  [I.3.1. Repository](#i31-repository)
-      -  [I.3.2. Working directory](#i32-working-directory)
-      -  [I.3.3. Staging area](#i33-staging-area)
-      -  [I.3.4. Commit](#i34-commit)
-      -  [I.3.5. Branch](#i35-branch)
-      -  [I.3.6. Merge](#i36-merge)
-      -  [I.3.15. Origin](#i315-origin)
-      -  [I.3.16. HEAD](#i316-head)
-      -  [I.3.17. Master](#i317-master)
-      -  [I.3.18. Stash](#i318-stash)
-      -  [I.3.19. Log](#i319-log)
-      -  [I.3.20. .gitignore](#i320-gitignore)
-   -  [I.4. Git basic command](#i4-git-basic-command)
-      -  [I.4.1. git status](#i41-git-status)
-      -  [I.4.2. git init](#i42-git-init)
-      -  [I.4.3. git add](#i43-git-add)
-      -  [I.4.4. git commit](#i44-git-commit)
-      -  [I.4.5. git log](#i45-git-log)
-      -  [I.4.6. git branch](#i46-git-branch)
-      -  [I.4.7. git checkout and git switch](#i47-git-checkout-and-git-switch)
-      -  [I.4.8. git merge](#i48-git-merge)
-      -  [I.4.9. git diff](#i49-git-diff)
-      -  [I.4.10. git stash](#i410-git-stash)
-      -  [I.4.11. git reset](#i411-git-reset)
-      -  [I.4.12. git config](#i412-git-config)
-      -  [I.4.13. git mv](#i413-git-mv)
-      -  [I.4.14. git rm](#i414-git-rm)
-      -  [I.4.15. git restore](#i415-git-restore)
-      -  [I.4.16. git revert](#i416-git-revert)
--  [II. Github](#ii-github)
-   -  [II.1. What's the difference between Git and Github?](#ii1-whats-the-difference-between-git-and-github)
-   -  [II.2. Github basic](#ii2-github-basic)
-      -  [II.2.1. Clone a Repo](#ii21-clone-a-repo)
-         -  [II.2.1.1. Cloning Github Repos With Git Clone](#ii211-cloning-github-repos-with-git-clone)
-         -  [II.2.1.2. Cloning Non-Github Repos](#ii212-cloning-non-github-repos)
-      -  [II.2.3. Setup SSH Key (Optional)](#ii23-setup-ssh-key-optional)
-         -  [II.2.3.1. Generate SSH Key](#ii231-generate-ssh-key)
-      -  [II.2.4. Create a Repo](#ii24-create-a-repo)
-         -  [II.2.4.1. Create a new repository from scratch](#ii241-create-a-new-repository-from-scratch)
-         -  [II.2.4.2. Import an existing project](#ii242-import-an-existing-project)
-      -  [II.2.5. Push to a Repo (git push)](#ii25-push-to-a-repo-git-push)
-      -  [II.2.6. Remote tracking branches](#ii26-remote-tracking-branches)
-         -  [II.2.6.1. Fetching](#ii261-fetching)
-         -  [II.2.6.2. Pulling](#ii262-pulling)
-      -  [II.2.7. Repo visibility and access](#ii27-repo-visibility-and-access)
-      -  [II.2.8. Fork a Repo](#ii28-fork-a-repo)
-      -  [II.2.9. Github Collaborators](#ii29-github-collaborators)
-      -  [II.2.10. Github Pages](#ii210-github-pages)
-      -  [II.2.11. What's the README file?](#ii211-whats-the-readme-file)
-      -  [II.2.12. LICENSE](#ii212-license)
+- [I. Git](#i-git)
+  - [I.1. What is Git?](#i1-what-is-git)
+  - [I.2. Git Installation and Configuration](#i2-git-installation-and-configuration)
+    - [I.2.1. Install Git](#i21-install-git)
+    - [I.2.2. Configure Git](#i22-configure-git)
+  - [I.3. Git terms](#i3-git-terms)
+    - [I.3.1. Repository](#i31-repository)
+    - [I.3.2. Working directory](#i32-working-directory)
+    - [I.3.3. Staging area](#i33-staging-area)
+    - [I.3.4. Commit](#i34-commit)
+    - [I.3.5. Branch](#i35-branch)
+    - [I.3.6. Merge](#i36-merge)
+    - [I.3.15. Origin](#i315-origin)
+    - [I.3.16. HEAD](#i316-head)
+    - [I.3.17. Master](#i317-master)
+    - [I.3.18. Stash](#i318-stash)
+    - [I.3.19. Log](#i319-log)
+    - [I.3.20. .gitignore](#i320-gitignore)
+  - [I.4. Git basic command](#i4-git-basic-command)
+    - [I.4.1. git status](#i41-git-status)
+    - [I.4.2. git init](#i42-git-init)
+    - [I.4.3. git add](#i43-git-add)
+    - [I.4.4. git commit](#i44-git-commit)
+    - [I.4.5. git log](#i45-git-log)
+    - [I.4.6. git branch](#i46-git-branch)
+    - [I.4.7. git checkout and git switch](#i47-git-checkout-and-git-switch)
+    - [I.4.8. git merge](#i48-git-merge)
+    - [I.4.9. git diff](#i49-git-diff)
+    - [I.4.10. git stash](#i410-git-stash)
+    - [I.4.11. git reset](#i411-git-reset)
+    - [I.4.12. git config](#i412-git-config)
+    - [I.4.13. git mv](#i413-git-mv)
+    - [I.4.14. git rm](#i414-git-rm)
+    - [I.4.15. git restore](#i415-git-restore)
+    - [I.4.16. git revert](#i416-git-revert)
+- [II. Github](#ii-github)
+  - [II.1. What's the difference between Git and Github?](#ii1-whats-the-difference-between-git-and-github)
+  - [II.2. Github basic](#ii2-github-basic)
+    - [II.2.1. Clone a Repo](#ii21-clone-a-repo)
+      - [II.2.1.1. Cloning Github Repos With Git Clone](#ii211-cloning-github-repos-with-git-clone)
+      - [II.2.1.2. Cloning Non-Github Repos](#ii212-cloning-non-github-repos)
+    - [II.2.3. Setup SSH Key (Optional)](#ii23-setup-ssh-key-optional)
+    - [II.2.4. Create a Repo](#ii24-create-a-repo)
+      - [II.2.4.1. Create a new repository from scratch](#ii241-create-a-new-repository-from-scratch)
+      - [II.2.4.2. Import an existing project](#ii242-import-an-existing-project)
+    - [II.2.5. Push to a Repo (git push)](#ii25-push-to-a-repo-git-push)
+    - [II.2.6. Remote tracking branches](#ii26-remote-tracking-branches)
+      - [II.2.6.1. Fetching](#ii261-fetching)
+      - [II.2.6.2. Pulling](#ii262-pulling)
+    - [II.2.7. Repo visibility and access](#ii27-repo-visibility-and-access)
+    - [II.2.8. Fork a Repo](#ii28-fork-a-repo)
+    - [II.2.9. Github Collaborators](#ii29-github-collaborators)
+    - [II.2.10. Github Pages](#ii210-github-pages)
+    - [II.2.11. What's the README file?](#ii211-whats-the-readme-file)
+    - [II.2.12. LICENSE](#ii212-license)
 
 ---
 
@@ -139,7 +138,9 @@ In Git, a merge is when you combine changes from one branch into another. This a
 
 ### I.3.15. Origin
 
-In Git, the origin is the remote [repository](#i31-repository) that you cloned from. It's the repository that you use to push and pull changes to and from. When you clone a repository, Git automatically creates a remote connection to the original repository. This is called the "origin" remote. You can use the `git remote` command to view the remote connections in your repository.
+Origin is a conventional Git remote name, but it is not at all special. It's just a name for a URL.
+
+When you clone a repository, the default remote name setup for us is called `origin`. You can change it. Most people leave it.
 
 ### I.3.16. HEAD
 
@@ -410,11 +411,13 @@ A copy of the repo will be downloaded to your local computer.
 
 #### II.2.1.2. Cloning Non-Github Repos
 
+`git clone` is not tied specifically to Github. You can use it to clone any repo hosted anywhere! It just happens that most of the hosted repos are on Github these days.
+
 ### II.2.3. Setup SSH Key (Optional)
 
 SSH key is a way to authenticate yourself to Github without using your username and password. It's more secure than using username and password. You can use SSH key to push to a repo.
 
-#### II.2.3.1. Generate SSH Key
+Read this in [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 ### II.2.4. Create a Repo
 
@@ -442,9 +445,48 @@ You can follow the steps when creating a new repository to push to a repo like t
 
 ![push-to-repo](img/github-push-to-repo.png)
 
+**Permissions**
+
+Anyone can clone a repo from Github, provided the repo is **public**. You do not need to be an owner or collaborator to clone a repo. You just need the URL from Github.
+
+Pushing up your own changes to a repo that's another story entirely! You need permisson to do that!
+
 ### II.2.6. Remote tracking branches
 
-Remote tracking branches are references to the state of branches in your remote repositories. They're local branches that you can't move; they're moved automatically whenever you do any network communication. Remote tracking branches act as bookmarks to remind you where the branches on your remote repositories were the last time you connected to them.
+Before we can push anything up to Github, we need to tell Git about our remote repo on Github. We need to setup a "destination" to push up to.
+
+In Git, we refer these "destination" as remotes. Each remote is simply a URL where hosted repo lives
+
+**Viewing Remotes**
+
+To view any existing remotes for you repo, we can run `git remote` or `git remote -v` to see the URL of the remote.
+
+This just displays a list of remotes. If you haven't added any remotes yet, you won't see anything.
+
+**Adding Remotes**
+
+A remote is really two things: a URL and a label. To add a new remote, we need to provide both to Git. `git remote add <remote-name> <remote-url>`
+
+Example:
+
+```bash
+git remote add origin https://github.com/kztera/git-Github-study.git
+```
+
+Read about `origin` in [here](#i315-origin)
+
+**Check our work**
+
+Try viewing your remotes with `git remote -v`, and you should now see a remote showing up!
+
+Remember, by setting up a remote we are just telling Git about a remote repo URL. We have not "communicated" with the Gihub repo at all yet.
+
+**Other commands**
+
+They are not commonly used, but there are commands to rename and remove remotes if you need them.
+
+-  `git remote rename <old-name> <new-name>`: Rename a remote
+-  `git remote remove <remote-name>`: Remove a remote
 
 #### II.2.6.1. Fetching
 
