@@ -398,7 +398,7 @@ Often we want to get a local copy of an existing repository. To do this, we can 
 
 When you want download a repo from Github, you can use `git clone` to do it. First, you need to get the repo's URL. You can get it from the repo's page on Github.
 
-![repo-url](img/Github-link-of-repo.png)
+![repo-url](img/github-link-of-repo.png)
 
 Then, you can use `git clone` to download the repo.
 
@@ -424,7 +424,7 @@ You can create a new repository on Github in two ways: you can create a new repo
 
 First, you need to login to your Github account. Then, click the `New` button on the top right corner of the page Reopositories.
 
-![create-repo](img/Github-create-repo.png)
+![create-repo](img/github-create-repo.png)
 
 Then, you can create a new repository by following the instructions on the page.
 
@@ -440,7 +440,7 @@ Maybe you just created a new public repository for a project and you want to upl
 
 You can follow the steps when creating a new repository to push to a repo like this:
 
-![push-to-repo](img/Github-push-to-repo.png)
+![push-to-repo](img/github-push-to-repo.png)
 
 ### II.2.6. Remote tracking branches
 
@@ -462,7 +462,7 @@ In a workflow where you're using a remote repository as a central point for coll
 
 A repository can be public or private. Public repositories are visible to everyone, while private repositories are only visible to you and the people you choose to share them with. You can also choose to make your repository public or private when you create it and change it at any time.
 
-![repo-visibility](img/Github-repo-visibility.png)
+![repo-visibility](img/github-repo-visibility.png)
 
 ### II.2.8. Fork a Repo
 
