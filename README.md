@@ -50,7 +50,8 @@
       -  [II.2.4. Create a Repo](#ii24-create-a-repo)
          -  [II.2.4.1. Create a new repository from scratch](#ii241-create-a-new-repository-from-scratch)
          -  [II.2.4.2. Import an existing project](#ii242-import-an-existing-project)
-      -  [II.2.5. Remote tracking branches](#ii25-remote-tracking-branches)
+      -  [II.2.5. Remote](#ii25-remote)
+         -  [II.2.5.0. Remote Tracking Branches](#ii250-remote-tracking-branches)
          -  [II.2.5.1. Fetching](#ii251-fetching)
          -  [II.2.5.2. Pulling](#ii252-pulling)
       -  [II.2.6. Push to a Repo (git push)](#ii26-push-to-a-repo-git-push)
@@ -453,7 +454,7 @@ Then, you can create a new repository by following the instructions on the page.
 
 Go to the website https://Github.com/new/import, and follow the instructions on the page.
 
-### II.2.5. Remote tracking branches
+### II.2.5. Remote
 
 Before we can push anything up to Github, we need to tell Git about our remote repo on Github. We need to setup a "destination" to push up to.
 
@@ -489,6 +490,19 @@ They are not commonly used, but there are commands to rename and remove remotes 
 
 -  `git remote rename <old-name> <new-name>`: Rename a remote
 -  `git remote remove <remote-name>`: Remove a remote
+
+#### II.2.5.0. Remote Tracking Branches
+
+"At the time you last communicated with this remote repository, here is where x branch was pointing"
+
+This follow this pattern <remote>/<branch>.
+
+-  `origin/master` references the state of the master branch on the remote repo named origin.
+-  `upstream/pancake` references the state of the pancake branch on the remote repo named upstream. (This is a common name for the original repo you forked from)
+
+**Remote Branches**
+
+Run `git branch -r` to see a list of remote branches our local repo knows about.
 
 #### II.2.5.1. Fetching
 
