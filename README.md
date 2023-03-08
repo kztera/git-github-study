@@ -512,11 +512,34 @@ It lets you see what others have been working on, without having to merge those 
 
 Think of it as "please go and get the latest information from Github, but don't screw up my working directory."
 
+**Git Fetch**
+
+The `git fetch <remote>` command fetches branches and history from a specific remote repo. It only updates remote tracking branches.
+
+`git fetch origin` would fetch all changes from the origin remote repo.
+
 #### II.2.5.2. Pulling
 
-Pulling is the act of fetching from a remote repository and then immediately merging it into your local repository. Pulling is what you do when you want to download changes and immediately merge them into your working branch. Pulling is essentially a combination of fetching and merging.
+`git pull` is another command we can use to retrieve changes from a remote repository. Unlike fetch, pull actually updates our HEAD branch with whatever changes are retrieved from the remote.
 
-In a workflow where you're using a remote repository as a central point for collaboration, you'll want to make sure that you're always working with the most up-to-date changes. The best way to do this is to always fetch and merge data from the remote repository before you start working on a new feature or bug fix.
+"go and download data from Github AND immediately update my local repo with those changes"
+
+Simply, `git pull` = `git fetch` + `git merge`
+with `git fetch`: upadte the remote tracking branch with the latest changes from the remote repo
+and `git merge`: update my current branch with whatever changes are on the remote tracking branch
+
+To pull, we specify the particular remote and branch we want to pull using `git pull <remote> <branch>`. Just like with git merge, it matters WHERE we run this command from. Whatever branch we run it from is where the changes will be merged into.
+
+`git pull origin master` would fetch the latest information
+from the origin's master branch and merge those
+changes into our current branch.
+
+If we run git pull without specifying a particular remote or branch to pull from, git assumes the following:
+
+-  remote will default to origin
+-  branch will default to whatever tracking connection is configured for your current branch
+
+**Note:** this behavior can be configured, and tracking connections can be changed manually. Most people dont mess with that stuff
 
 ### II.2.6. Push to a Repo (git push)
 
