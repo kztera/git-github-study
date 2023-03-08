@@ -506,9 +506,11 @@ Run `git branch -r` to see a list of remote branches our local repo knows about.
 
 #### II.2.5.1. Fetching
 
-Fetching is the process of downloading commits, files, and refs from a remote repository into your local repository. Fetching is what you do when you want to see what everybody else has been working on. Fetching is the opposite of pushing.
+Fetching allows us to download changes from a remote repository, BUT those changes will not be automatically integrated into our working files.
 
-Each remote you have is stored under a shortname. By default, git gives the name `origin` to the server you cloned from, so that's what you'll see in most of the examples in this book. If you run `git remote -v`, you can see all the remote repositories you have configured.
+It lets you see what others have been working on, without having to merge those changes into your local repo.
+
+Think of it as "please go and get the latest information from Github, but don't screw up my working directory."
 
 #### II.2.5.2. Pulling
 
