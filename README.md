@@ -541,6 +541,15 @@ If we run git pull without specifying a particular remote or branch to pull from
 
 **Note:** this behavior can be configured, and tracking connections can be changed manually. Most people dont mess with that stuff
 
+**Summary**
+
+| git fetch                                                 | git pull                                                         |
+| --------------------------------------------------------- | ---------------------------------------------------------------- |
+| Get changes from remote branch(es)                        | Get changes from remote branch(es)                               |
+| Updates the remote tracking branches with the new changes | Updates the current branch with the new changes, merging them in |
+| Does not merge changes onto your current HEAD branch      | Can result in merge conflicts                                    |
+| Safe to do at anytime                                     | Not recommended if you have uncommitted changes                  |
+
 ### II.2.6. Push to a Repo (git push)
 
 Now that we have a remote set up, let's push some work up to Github! To do this, we need to use the git push command.
